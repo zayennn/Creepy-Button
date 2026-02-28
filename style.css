@@ -43,16 +43,24 @@ body {
   transition: outline 0.1s linear;
   -webkit-tap-highlight-color: transparent;
 }
-.creepy-btn, .creepy-btn__cover, .creepy-btn__eye {
+
+.creepy-btn,
+.creepy-btn__cover,
+.creepy-btn__eye {
   position: relative;
 }
-.creepy-btn, .creepy-btn__pupil {
+
+.creepy-btn,
+.creepy-btn__pupil {
   background-color: var(--black);
 }
-.creepy-btn__cover, .creepy-btn__pupil {
+
+.creepy-btn__cover,
+.creepy-btn__pupil {
   border-radius: inherit;
   display: block;
 }
+
 .creepy-btn__cover {
   background-color: var(--primary5);
   box-shadow: 0 0 0 0.125em var(--black) inset;
@@ -61,6 +69,7 @@ body {
   transform-origin: 1.25em 50%;
   transition: background-color var(--trans-dur), transform var(--trans-dur) cubic-bezier(0.65, 0, 0.35, 1);
 }
+
 .creepy-btn__eye {
   animation: eye-blink 3s infinite;
   background-color: var(--gray1);
@@ -69,9 +78,12 @@ body {
   width: 0.75em;
   height: 0.75em;
 }
-.creepy-btn__eyes, .creepy-btn__pupil {
+
+.creepy-btn__eyes,
+.creepy-btn__pupil {
   position: absolute;
 }
+
 .creepy-btn__eyes {
   display: flex;
   align-items: center;
@@ -80,6 +92,7 @@ body {
   bottom: 0.5em;
   height: 0.75em;
 }
+
 .creepy-btn__pupil {
   aspect-ratio: 1;
   top: 50%;
@@ -87,26 +100,35 @@ body {
   width: 0.375em;
   transform: translate(-50%, -50%);
 }
+
 .creepy-btn:focus-visible {
   outline: 0.1875em solid var(--primary3);
 }
+
 .creepy-btn:hover .creepy-btn__cover {
   background-color: var(--primary6);
 }
-.creepy-btn:focus-visible .creepy-btn__cover, .creepy-btn:hover .creepy-btn__cover {
+
+.creepy-btn:focus-visible .creepy-btn__cover,
+.creepy-btn:hover .creepy-btn__cover {
   transform: rotate(-12deg);
   transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1.65);
 }
+
 .creepy-btn:active .creepy-btn__cover {
   transform: rotate(0);
   transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 @keyframes eye-blink {
-  0%, 92%, 100% {
+
+  0%,
+  92%,
+  100% {
     animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0);
     height: 0.75em;
   }
+
   96% {
     animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
     height: 0;
