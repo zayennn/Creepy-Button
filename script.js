@@ -23,7 +23,6 @@ function CreepyButton({ onClick, children }) {
 	const updateEyes = (e) => {
 		const userEvent = 'touches' in e ? e.touches[0] : e;
 
-		// get the center of the eyes container and cursor location
 		const eyesRect = eyesRef.current?.getBoundingClientRect();
 		if (!eyesRect) return;
 
