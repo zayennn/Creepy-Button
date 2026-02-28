@@ -40,7 +40,6 @@ function CreepyButton({ onClick, children }) {
 		const dy = cursor.y - eyes.y;
 		const angle = Math.atan2(-dy, dx) + Math.PI / 2;
 
-		// then the pupil distance from the eye center
 		const visionRangeX = 180;
 		const visionRangeY = 75;
 
