@@ -36,7 +36,6 @@ function CreepyButton({ onClick, children }) {
 			y: userEvent.clientY,
 		};
 
-		// calculate the eye angle
 		const dx = cursor.x - eyes.x;
 		const dy = cursor.y - eyes.y;
 		const angle = Math.atan2(-dy, dx) + Math.PI / 2;
